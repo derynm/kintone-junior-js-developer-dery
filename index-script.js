@@ -54,7 +54,7 @@
 
   const searchEmployee = async () => {
     renderLoading();
-    const searchInput = document.getElementById('search-input').value;
+    const searchInput = document.getElementById('search-input').value.trim();
     const response = await fetch(`${API_URL}?name=${searchInput}`);
     const data = await response.json();
     employees = data;

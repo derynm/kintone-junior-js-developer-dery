@@ -25,7 +25,7 @@
 
     const newEmployee = {
       id: getId(),
-      name: formData.get('name'),
+      name: formData.get('name').trim(),
       position: formData.get('position'),
     };
 
