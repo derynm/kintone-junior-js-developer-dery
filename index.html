@@ -7,18 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee Data</title>
 
-    <!-- import styles.css -->
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <h1>Employee Data</h1>
+    <div class="container">
+      <h1>Employee Data</h1>
 
-    <!-- Button to navigate to form -->
+      <button class="btn-primary" id="button-to-form">Add Employee</button>
 
-    <!-- Filter Component -->
+      <form id="filter-form">
+        <input id="search-input" type="text" placeholder="Search by Name" />
+        <button id="button-search-employee">Search</button>
+      </form>
 
-    <!-- Table to display data -->
+      <table id="employee-table">
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="employee-table-body">
+        </tbody>
+      </table>
 
-    <!-- import index-script.js -->
+    </div>
   </body>
+  <script src="index-script.js"></script>
 </html>
